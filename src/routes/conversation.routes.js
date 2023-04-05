@@ -1,10 +1,11 @@
 const {Router} = require('express')
-const { updateTypes, createCover, createGroupConver, deleteConver, getConverWithMessage } = require('../controllers/conversations.controller')
+const { updateTypes, createCover, createGroupConver, deleteConver, getConverWithMessage} = require('../controllers/conversations.controller')
 
 
 const router = Router()
 
 router.get('/api/v1/conver/messagee/:idConver', getConverWithMessage)
+
 
 router.post('/api/v1/userConver', createCover) // en pareja
 
